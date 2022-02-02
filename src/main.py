@@ -34,10 +34,10 @@ d6 = pygame.image.load("resources/dice6.png")
 
 #Importing the players for the game
 
-red_c = pygame.image.load("resources/red_c.png")
-yellow_c = pygame.image.load("resources/yellow_c.png")
-green_c = pygame.image.load("resources/green_c.png")
-blue_c = pygame.image.load("resources/blue_c.png")
+red_c = pygame.image.load("resources/red_c.png") # this is player 1
+yellow_c = pygame.image.load("resources/yellow_c.png") # this is player 2
+green_c = pygame.image.load("resources/green_c.png") # This is player 3
+blue_c = pygame.image.load("resources/blue_c.png") # This is player 4
 menu_background = pygame.image.load("resources/menu.jpg")
 posts = pygame.image.load("resources/snake.png")
 
