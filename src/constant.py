@@ -1,27 +1,48 @@
-HEIGHT = 1368
-WIDTH = 400
-MOTHERBOARD_IMAGE_NAME = "resources/snakes.jpg"
+HEIGHT = 768
+WIDTH = 1366
+MOTHERBOARD_IMAGE_NAME = "src/resources/snakes.jpg"
 
-DICE1_IMAGE_NAME = "resources/dice1.png"
-DICE2_IMAGE_NAME = "resources/dice2.png"
-DICE3_IMAGE_NAME = "resources/dice3.png"
-DICE4_IMAGE_NAME = "resources/dice4.png"
-DICE5_IMAGE_NAME = "resources/dice5.png"
-DICE6_IMAGE_NAME = "resources/dice6.png"
+ICON = "src/resources/icon.jpg"
+CAPTIONS = "snakes_and_ladders"
 
-COUNTER_BLUE_IMAGE_NAME = "resources/blue_c.png"
-COUNTER_RED_IMAGE_NAME = "resources/red_c.png"
-COUNTER_GREEN_IMAGE_NAME = "resources/green_c.png"
-COUNTER_YELLOW_IMAGE_NAME = "resources/yellow_c.png"
+DICE1_IMAGE_NAME = "src/resources/dice1.png"
+DICE2_IMAGE_NAME = "src/resources/dice2.png"
+DICE3_IMAGE_NAME = "src/resources/dice3.png"
+DICE4_IMAGE_NAME = "src/resources/dice4.png"
+DICE5_IMAGE_NAME = "src/resources/dice5.png"
+DICE6_IMAGE_NAME = "src/resources/dice6.png"
 
-INITIAL_BACKGROUND_IMAGE_NAME = "resources/introduction_image.png"
-INITIAL_BACKGROUND2_IMAGE_NAME = "resources/introduction_image2.png"
-INITIAL_BACKGROUND3_IMAGE_NAME = "resources/introduction_image3.png"
-INITIAL_BACKGROUND4_IMAGE_NAME = "resources/introduction_image4.png"
-INITIAL_BACKGROUND5_IMAGE_NAME = "resources/introduction_image5.png"
+MENU_BACKGROUND = "src/resources/game_background.jpg"
+SNAKE = "src/resources/snakes.jpg"
+OWNER = "src/resources/owner.jpg"
 
-PYGAME_MIXER_SOUND = "sound/sound.wav"
-SNAKE_SOUND = "Ladders and Snakes/sound/snake.wav"
-WIN_SOUND = "Ladders and Snakes/sound/win.wav"
-LOSE_SOUND = "Ladders and Snakes/sound/lose.wav"
-LADDER_SOUND = "Ladders and Snakes/sound/ladder.wav"
+COUNTER_BLUE_IMAGE_NAME = "src/resources/blue_c.png"
+COUNTER_RED_IMAGE_NAME = "src/resources/red_c.png"
+COUNTER_GREEN_IMAGE_NAME = "src/resources/green_c.png"
+COUNTER_YELLOW_IMAGE_NAME = "src/resources/yellow_c.png"
+
+INITIAL_BACKGROUND_IMAGE_NAME = "src/resources/introduction_image.png"
+INITIAL_BACKGROUND2_IMAGE_NAME = "src/resources/introduction_image2.jpg"
+INITIAL_BACKGROUND3_IMAGE_NAME = "src/resources/introduction_image3.jpg"
+INITIAL_BACKGROUND4_IMAGE_NAME = "src/resources/introduction_image4.jpg"
+INITIAL_BACKGROUND5_IMAGE_NAME = "src/resources/introduction_image5.jpg"
+
+PYGAME_MIXER_SOUND = "src/sound/music.wav"
+SNAKE_SOUND = "src/sound/snake.wav"
+WIN_SOUND = "src/sound/win.wav"
+LOSE_SOUND = "src/sound/lose.wav"
+LADDER_SOUND = "src/sound/ladder.wav"
+
+black_color = (20, 20, 20)
+white_color = (250, 250, 250)
+red_color = (200, 0, 0)
+blue_red_color = (260, 0, 0)
+green_color = (0, 200, 0)
+blue_green_color = (0, 230, 0)
+blue_color = (0, 0, 200)
+grey_color = (50, 50, 50)
+yellow_color = (150, 150, 0)
+purple_color = (43, 3, 132)
+blue_purple_color = (60, 0, 190)
+
+CREDITS = "src/resources/owner.jpg"

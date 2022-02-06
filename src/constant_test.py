@@ -15,6 +15,10 @@ def test_height_width():
 
 def test_initial_background():
     assert constant.INITIAL_BACKGROUND_IMAGE_NAME == "resources/introduction_image.png"
+    assert constant.INITIAL_BACKGROUND_IMAGE_NAME == "resources/introduction_image2.png"
+    assert constant.INITIAL_BACKGROUND_IMAGE_NAME == "resources/introduction_image3.png"
+    assert constant.INITIAL_BACKGROUND_IMAGE_NAME == "resources/introduction_image4.png"
+    assert constant.INITIAL_BACKGROUND_IMAGE_NAME == "resources/introduction_image5.png"
     #assert constant. complete this after
 
 def test_sound():
