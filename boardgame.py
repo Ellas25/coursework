@@ -1,11 +1,12 @@
 import pygame
 import main_menu
 import start_page
+
 import set_up
 import constant
 import buttons
 
-def dice(d):
+def dice(d): # creating the function called dice which will upload the pictures when told to
     if d == 1:
         d = constant.DICE1_IMAGE_NAME
     elif d == 2:
@@ -20,7 +21,7 @@ def dice(d):
         d = constant.DICE6_IMAGE_NAME
 
     time_clock = pygame.time.get_ticks()
-    while pygame.time.get_ticks() - time_clock < 1000:
+    while pygame.time.get_ticks() - time_clock < 1000: #loading the board and window at 1000 miliseconds 
         set_up.game_layout_display.blit(d, (300, 500))
         pygame.display.update()
 
@@ -76,7 +77,7 @@ def playing(best):
     if best6 == 7:
         choice()
     set_up.game_layout_display.blit(posts, (0, 0))
-    set_up.game_layout_display.blit(constant.BOARD, (constant.WIDTH / 2 - 250, constant.HEIGHT / 2 - 250))
+    set_up.game_layout_display.blit(constant.BOARD, (constant.WIDTH / 2 - 250, constant.HEIGHT / 2 - 250)) # uploading the board 
     xcr = xcy = xcg = xcb = 406 - 25
     ycr = ycy = ycg = ycb = 606 - 25
     set_up.game_layout_display.blit(constant.COUNTER_RED_IMAGE_NAME, (xcy, ycy))
@@ -88,20 +89,20 @@ def playing(best):
 
     if 5 > best > 2:
         set_up.game_layout_display.blit(constant.COUNTER_BLUE_IMAGE_NAME, (xcb, ycb))
-    gamer1 = "Player 1"
-    gamer1score = 0
+    gamer_1 = "Player 1"
+    gamer_1score = 0
     if best == 21:
-        gamer2 = "Computer"
-        gamer2score = 0
+        gamer_2 = "Computer"
+        gamer_2score = 0
     if 5 > best > 1:
-        gamer2 = "Player 2"
-        gamer2score = 0
+        gamer_2 = "Player 2"
+        gamer_2score = 0
     if 5 > best > 2:
-        gamer3 = "Player 3"
-        gamer3score = 0
+        gamer_3 = "Player 3"
+        gamer_3score = 0
     if 5 > best > 3:
-        gamer4 = "Player 4"
-        gamer4score = 0
+        gamer_4 = "Player 4"
+        gamer_4score = 0
     tips = 1
     play = True
     while True:
@@ -122,11 +123,11 @@ def playing(best):
                     if best == 21:
         if button_1("Player 1", mouse[0], mouse[1], 100, 700, 200, 50, constant.red_color, constant.grey_color, 30):
             if tips == 1:
-                gamer1score, less, set, six = turn(gamer1score, less, set)
+                gamer_1score, less, set, six = turn(gamer1score, less, set)
                 if not six:
                     tips += 1
-                xcr, ycr = movement(gamer1score)
-                if gamer1score == 100:
+                xcr, ycr = movement(gamer_1score)
+                if gamer_1score == 100:
                     time = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time < 2000:
                         constant.BOARD("Player 1 Wins", 650, 50, 50, constant.blue_color)
@@ -138,14 +139,14 @@ def playing(best):
         button_1("Computer", mouse[0], mouse[1], 400, 700, 200, 50, constant.yellow_color, constant.grey_color, 30)
         if True:
             if tips == 2:
-                gamer2score, less, set, six = turn(gamer2score, less, set)
-                xcy, ycy = movement(gamer2score)
+                gamer2score, less, set, six = turn(gamer_2score, less, set)
+                xcy, ycy = movement(gamer_2score)
                 if not six:
                     tips += 1
                     if best < 3 or best == 21:
                         tips = 1
 
-                if gamer2score == 100:
+                if gamer_2score == 100:
                     time_clock = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time_clock < 2000:
                         constant.BOARD("Computer Wins", 650, 50, 50, constant.black_color)
@@ -156,11 +157,11 @@ def playing(best):
     if 5 > best > 1:
         if button_1("Player 1", mouse[0], mouse[1], 100, 700, 200, 50, constant.red_color, constant.grey_color, 30):
             if tips == 1:
-                gamer1score, less, set, six = turn(gamer1score, less, set)
-                xcr, ycr = movement(gamer1score)
+                gamer_1score, less, set, six = turn(gamer1score, less, set)
+                xcr, ycr = movement(gamer_1score)
                 if not six:
                     tips += 1
-                if gamer1score == 100:
+                if gamer_1score == 100:
                     time_clock = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time_clock < 2000:
                         constant.BOARD("Player 1 Wins", 650, 50, 50, constant.black_color)
@@ -178,7 +179,7 @@ def playing(best):
                     if best < 3:
                         tips = 1
 
-                if gamer2score == 100:
+                if gamer_2score == 100:
                     time_clock = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time_clock < 2000:
                         constant.BOARD("Player 2 Wins", 650, 50, 50, constant.black_color)
@@ -190,14 +191,14 @@ def playing(best):
     if 5 > best > 2:
         if button_1("Player 3", mouse[0], mouse[1], 700, 700, 200, 50, constant.green_color, constant.grey_color, 30):
             if tips == 3:
-                gamer3score, less, set, six = turn(gamer3score, less, set)
+                gamer_3score, less, set, six = turn(gamer_3score, less, set)
                 xcg, ycg = movement(gamer3score)
                 if not six:
                     tips += 1
                     if best < 4:
                         tips = 1
 
-                if gamer3score == 100:
+                if gamer_3score == 100:
                     time_clock = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time_clock < 2000:
                         constant.BOARD("Player 3 Wins", 650, 50, 50, constant.black_color)
@@ -209,14 +210,14 @@ def playing(best):
     if 5 > best > 3:
         if button_1("Player 4", mouse[0], mouse[1], 1000, 700, 200, 50, constant.blue_color, constant.grey_color, 30):
             if tips == 4:
-                gamer4score, less, set, six = turn(gamer4score, less, set)
+                gamer_4score, less, set, six = turn(gamer_4score, less, set)
                 xcb, ycb = movement(gamer4score)
                 if not six:
                     tips += 1
                     if best < 5:
                         tips = 1
 
-                if gamer4score == 100:
+                if gamer_4score == 100:
                     time_clock = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time_clock < 2000:
                         constant.BOARD("Player 4 Wins", 650, 50, 50, constant.black_color)
