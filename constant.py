@@ -46,6 +46,6 @@ purple_color = (43, 3, 132)
 blue_purple_color = (60, 0, 190)
 
 CREDITS = "src/resources/owner.jpg"
-BOARD = "src/respources/snakes.jpg"
+POSTS = "src/ressources/snakes.jpg"
 
 BUTTON_FONTS = "src/fonts/Qarolina.ttf"

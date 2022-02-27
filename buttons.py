@@ -28,7 +28,19 @@ def side_button(button_name, xm, ym, x, y, wid, hei, intial_colour, after_colour
         pygame.draw.rect(set_up.game_layout_display, after_colour, [x - 2.5, y - 2.5, wid + 5, hei + 5])
         if pygame.mouse.get_pressed() == (1, 0, 0):
                 return True
-
     else:
         pygame.draw.rect(set_up.game_layout_display, intial_colour, [x, y, wid, hei])
     message_displays.message_display_screen(button_name, (x + wid + x) / 2, (y + hei + y) / 2, size)
+
+def play_button(t, xm, ym, x, y, wid, hei, int, after, fast):
+    # mouse position
+    mouse = pygame.mouse.get_pos()
+    click = pygame.mouse.get_pressed()
+    if x + wid > xm > x and y + hei > ym > y:
+        pygame.draw.rect(set_up.game_layout_display, after, [x - 2.5, y - 2.5, wid + 5, hei + 5])
+        if pygame.mouse.get_pressed() == (1, 0, 0):
+            return True
+
+    else:
+        pygame.draw.rect(set_up.game_layout_display, int, [x, y, wid, hei])
+    message_displays.message_display_screen(t, (x + wid + x) / 2, (y + hei + y) / 2, fast)
