@@ -8,6 +8,7 @@ import buttons
 
 #import boardgame
 
+from boardgame import player_button
 
 def main_menu():
     pygame.mixer.music.play(-1)
@@ -25,10 +26,10 @@ def main_menu():
             mouse = pygame.mouse.get_pos()
 
             set_up.game_layout_display.blit(set_up.menu_background, (0, 0))
-            buttons.centre_button("Play", mouse[0], mouse[1], (constant.WIDTH / 2 - 100), constant.HEIGHT / 2, 200, 100, constant.green_color,
+            player_button("Play", mouse[0], mouse[1], (constant.WIDTH / 2 - 100), constant.HEIGHT / 2, 200, 100, constant.green_color,
                 constant.blue_color, 60, 1)
 
-            buttons.centre_button("Quit", mouse[0], mouse[1], (constant.WIDTH / 2 - 100), (constant.HEIGHT / 2) + 200, 200, 100,
+            player_button("Quit", mouse[0], mouse[1], (constant.WIDTH / 2 - 100), (constant.HEIGHT / 2) + 200, 200, 100,
                 constant.red_color, constant.grey_color, 60, 0)
 
             mouse = pygame.mouse.get_pos()

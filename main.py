@@ -1,11 +1,10 @@
 import pygame
-import constant
-import time
+
 from start_page import introduction
 import main_menu
-import set_up
-###import boardgame
-#import powerups
+
+
+import powerups
 
 introduction()
 

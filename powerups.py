@@ -1,6 +1,6 @@
 import pygame
 import boardgame
-import main
+#import main
 def powerups(x):
     if x == 95:
         return 3

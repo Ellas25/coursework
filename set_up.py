@@ -26,7 +26,7 @@ yellow_c = pygame.image.load(constant.COUNTER_YELLOW_IMAGE_NAME)
 green_c = pygame.image.load(constant.COUNTER_GREEN_IMAGE_NAME)
 blue_c = pygame.image.load(constant.COUNTER_BLUE_IMAGE_NAME)
 menu_background = pygame.image.load(constant.MENU_BACKGROUND)
-posts = pygame.image.load(constant.SNAKE)
+posts = pygame.image.load(constant.POSTS)
 
 initial_background = pygame.image.load(constant.INITIAL_BACKGROUND_IMAGE_NAME)
 initial_background2 = pygame.image.load(constant.INITIAL_BACKGROUND2_IMAGE_NAME)

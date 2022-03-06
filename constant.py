@@ -27,7 +27,7 @@ INITIAL_BACKGROUND3_IMAGE_NAME = "src/resources/introduction_image3.jpg"
 INITIAL_BACKGROUND4_IMAGE_NAME = "src/resources/introduction_image4.jpg"
 INITIAL_BACKGROUND5_IMAGE_NAME = "src/resources/introduction_image5.jpg"
 
-PYGAME_MIXER_SOUND = "src/sound/music.wav"
+PYGAME_MIXER_SOUND = "src/sound/musics.wav"
 SNAKE_SOUND = "src/sound/snake.wav"
 WIN_SOUND = "src/sound/win.wav"
 LOSE_SOUND = "src/sound/lose.wav"
@@ -46,6 +46,6 @@ purple_color = (43, 3, 132)
 blue_purple_color = (60, 0, 190)
 
 CREDITS = "src/resources/owner.jpg"
-POSTS = "src/ressources/snakes.jpg"
+POSTS = "src/resources/game_background.jpg"
 
 BUTTON_FONTS = "src/fonts/Qarolina.ttf"

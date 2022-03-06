@@ -3,12 +3,14 @@ import set_up
 import message_displays
 import quit
 
+
+
 def centre_button(button_name, xm, ym, x, y, wid, hei, initial_color, after_color, size, type):
     if x + wid > xm > x and y + hei > ym > y:
         pygame.draw.rect(set_up.game_layout_display, after_color, [x - 2.5, y - 2.5, wid + 5, hei + 5])
         if pygame.mouse.get_pressed() == (1, 0, 0):
             if type == 1:
-                print(type)
+                pass
             elif type == 5:
                 return 5
             elif type == 0:
@@ -16,7 +18,8 @@ def centre_button(button_name, xm, ym, x, y, wid, hei, initial_color, after_colo
             elif type == "s" or type == 2 or type == 3 or type == 4:
                 return type
             elif type == 7:
-                print(type)
+               pass
+
             else:
                 return True
     else:
