@@ -9,11 +9,11 @@ pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 font = pygame.font.Font("fonts/Qarolina.ttf", 21)
 
-while True:
+while x ==True:
     screen.fill(black_color)
 
-    for events in pygame.event.get():  # look at all events
-        if events.type == pygame.MOUSEMOTION:
+    for tevents in pygame.event.get():  # look at all events in pygame 
+        if tevents.type == pygame.MOUSEMOTION:
             mouse_position = pygame.mouse.get_pos()
             text = font.render(f"{mouse_position[0]}, {mouse_position[1]}", True, green_color)
             textRect = text.get_rect()
@@ -21,7 +21,7 @@ while True:
             screen.blit(mother_board, (350, 35))
             screen.blit(text, textRect)
             pygame.display.update()
-        if events.type == pygame.KEYDOWN:
+        if tevents.type == pygame.KEYDOWN:
             if events.key == pygame.K_ESCAPE:
                 pygame.quit()
 
