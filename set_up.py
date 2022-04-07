@@ -29,6 +29,7 @@ menu_background = pygame.image.load(constant.MENU_BACKGROUND)
 posts = pygame.image.load(constant.POSTS)
 
 initial_background = pygame.image.load(constant.INITIAL_BACKGROUND_IMAGE_NAME)
+initial_background1 = pygame.image.load(constant.INITIAL_BACKGROUND1_IMAGE_NAME)
 initial_background2 = pygame.image.load(constant.INITIAL_BACKGROUND2_IMAGE_NAME)
 initial_background3 = pygame.image.load(constant.INITIAL_BACKGROUND3_IMAGE_NAME)
 initial_background4 = pygame.image.load(constant.INITIAL_BACKGROUND4_IMAGE_NAME)
