@@ -21,11 +21,12 @@ COUNTER_RED_IMAGE_NAME = "src/resources/red_c.png"
 COUNTER_GREEN_IMAGE_NAME = "src/resources/green_c.png"
 COUNTER_YELLOW_IMAGE_NAME = "src/resources/yellow_c.png"
 
-INITIAL_BACKGROUND_IMAGE_NAME = "src/resources/introduction_image.png"
-INITIAL_BACKGROUND2_IMAGE_NAME = "src/resources/introduction_image2.jpg"
-INITIAL_BACKGROUND3_IMAGE_NAME = "src/resources/introduction_image3.jpg"
-INITIAL_BACKGROUND4_IMAGE_NAME = "src/resources/introduction_image4.jpg"
-INITIAL_BACKGROUND5_IMAGE_NAME = "src/resources/introduction_image5.jpg"
+INITIAL_BACKGROUND_IMAGE_NAME = "src/introduction_image.png"
+INITIAL_BACKGROUND_IMAGE1_NAME = "src/introduction_image1.png"
+INITIAL_BACKGROUND2_IMAGE_NAME = "src/introduction_image2.png"
+INITIAL_BACKGROUND3_IMAGE_NAME = "src/introduction_image3.png"
+INITIAL_BACKGROUND4_IMAGE_NAME = "src/introduction_image4.png"
+INITIAL_BACKGROUND5_IMAGE_NAME = "src/introduction_image5.png"
 
 PYGAME_MIXER_SOUND = "src/sound/musics.wav"
 SNAKE_SOUND = "src/sound/snake.wav"
@@ -46,6 +47,6 @@ purple_color = (43, 3, 132)
 blue_purple_color = (60, 0, 190)
 
 CREDITS = "src/resources/owner.jpg"
-POSTS = "src/resources/game_background.jpg"
+POSTS = "src/game_background.png"
 
 BUTTON_FONTS = "src/fonts/Qarolina.ttf"
