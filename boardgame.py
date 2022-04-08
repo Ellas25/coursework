@@ -65,9 +65,8 @@ def choices_made_in_game(t):
         players_4 = player_button("4 Players", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 550, 300, 50, constant.green_color, constant.blue_green_color, 30, 4)
         # Back button
         best5 = player_button("Back", mouse[0], mouse[1], 0, 650, 200, 50, constant.red_color, constant.blue_red_color, 30, 5)
-
-
-        if best5 == 5:
+        class best_funct():
+             if best5 == 5:
             pass
         if player_1 == "s":
             playing(21)
@@ -77,7 +76,6 @@ def choices_made_in_game(t):
             playing(3)
         if players_4 == 4:
             playing(4)
-
         pygame.display.update()
 
 def player_button(button_name, xm, ym, x, y, wid, hei, initial_color, after_color, size, type):
@@ -166,7 +164,7 @@ def playing(best):
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
-
+"""
             play_button("Computer", mouse[0], mouse[1], 400, 700, 200, 50, constant.yellow_color, constant.grey_color, 30)
             if True:
                 if tips == 2:
@@ -207,7 +205,7 @@ def playing(best):
                         tips += 1
                         if best < 3:
                             tips = 1
-
+"""
                     if gamer2score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
