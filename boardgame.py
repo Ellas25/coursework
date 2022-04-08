@@ -15,6 +15,7 @@ from buttons import play_button
 
 time_clocks = pygame.time.Clock()
 
+"""
 def dice(d):
     if d == 1:
         d = set_up.d1
@@ -33,11 +34,11 @@ def dice(d):
     while pygame.time.get_ticks() - time_clock < 1000: #1000 milli seconds loads the image
         set_up.game_layout_display.blit(d, (300, 500)) # shows the image of the number
         pygame.display.update() # updates the image on the screen
+"""
 
-
-def choice():
-    f = True
-    while f == True:
+def choices_made_in_game(t):
+    t = True
+    while t == True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -45,20 +46,20 @@ def choice():
                 if event.key == pygame.K_ESCAPE:
                     pygame.quit()
 
-        # mouse position
-        mouse = pygame.mouse.get_pos()
+       
+        Click_mouse = pygame.mouse.get_pos()
         click = pygame.mouse.get_pressed()
-        player_1 = players_2 = players_3 = players_4 = best5 = -1
+        p1 = p_2 = p_3 = p_4 = best5 = -1
         set_up.game_layout_display.blit(set_up.posts, (0, 0))
         # Single player button
 
-        player_1 = player_button("Single Player", mouse[0], mouse[1], (constant.WIDTH / 2 - 150), 250, 300, 50, constant.green_color,
+        p_1 = player_button("You vs Robot", mouse[0], mouse[1], (constant.WIDTH / 2 - 150), 250, 300, 50, constant.green_color,
                        constant.blue_green_color, 30, "s")
         # 2 player button
-        players_2 = player_button("2 Players", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 350, 300, 50, constant.green_color,
+        players_2 = player_button("Duo", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 350, 300, 50, constant.green_color,
                        constant.blue_green_color, 30, 2)
         # 3 player
-        players_3 = player_button("3 Players", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 450, 300, 50, constant.green_color,
+        players_3 = player_button("Trio", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 450, 300, 50, constant.green_color,
                        constant.blue_green_color, 30, 3)
         # 4 player
         players_4 = player_button("4 Players", mouse[0], mouse[1], (constant.WIDTH / 2) - 150, 550, 300, 50, constant.green_color, constant.blue_green_color, 30, 4)
