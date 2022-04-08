@@ -2,8 +2,9 @@ import pygame
 import boardgame
 import powerups
 # Snake Check
-def snakes(e):
-    if e == 17:
+class snakes(e):
+    while snakes == e:
+     if e == 17:
         return 7
     elif e == 54:
         return 34
@@ -22,3 +23,6 @@ def snakes(e):
     else:
         return e
 
+
+        
+   
