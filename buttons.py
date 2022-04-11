@@ -51,7 +51,7 @@ button1 = Button(
     bg="navy",
     feedback="You clicked me")
   
-"""
+
     if x + wid > xm > x and y + hei > ym > y:
         pygame.draw.rect(set_up.game_layout_display, after_color, [x - 2.5, y - 2.5, wid + 5, hei + 5])
         if pygame.mouse.get_pressed() == (1, 0, 0):
@@ -191,3 +191,4 @@ button1 = Button(
     font=30,
     bg="navy",
     feedback="You clicked me")
+    """
