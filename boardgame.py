@@ -15,7 +15,7 @@ from buttons import play_button
 
 time_clocks = pygame.time.Clock()
 
-"""
+
 def dice(d):
     if d == 1:
         d = set_up.d1
@@ -34,9 +34,9 @@ def dice(d):
     while pygame.time.get_ticks() - time_clock < 1000: #1000 milli seconds loads the image
         set_up.game_layout_display.blit(d, (300, 500)) # shows the image of the number
         pygame.display.update() # updates the image on the screen
-"""
 
-def choices_made_in_game(t):
+
+def choice(t):
     t = True
     while t == True:
         for event in pygame.event.get():
@@ -47,7 +47,7 @@ def choices_made_in_game(t):
                     pygame.quit()
 
        
-        Click_mouse = pygame.mouse.get_pos()
+        mouse = pygame.mouse.get_pos()
         click = pygame.mouse.get_pressed()
         p1 = p_2 = p_3 = p_4 = best5 = -1
         set_up.game_layout_display.blit(set_up.posts, (0, 0))
