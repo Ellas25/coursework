@@ -109,16 +109,16 @@ def playing(best):
     set_up.game_layout_display.blit(set_up.mother_board,(350, 35))#loads the board image on the post image
     xcr = xcy = xcg = xcb = 406 - 25 # variables being initiated
     ycr = ycy = ycg = ycb = 606 - 25 # variables being initiated
-    set_up.game_layout_display.blit(set_up.red_c, (xcy, ycy))
+    set_up.game_layout_display.blit(set_up.teal_c, (xcy, ycy))
 
     if 5 > best > 1 or best == 21:
-        set_up.game_layout_display.blit(set_up.yellow_c, (xcy, ycy)) # blit is the position and the second is the coordinates
+        set_up.game_layout_display.blit(set_up.white_c, (xcy, ycy)) # blit is the position and the second is the coordinates
 
     if 5 > best > 2 or best == 21:
-        set_up.game_layout_display.blit(set_up.green_c, (xcg, ycg))
+        set_up.game_layout_display.blit(set_up.grey_c, (xcg, ycg))
 
     if 5 > best > 2:
-        set_up.game_layout_display.blit(set_up.blue_c, (xcb, ycb))
+        set_up.game_layout_display.blit(set_up.purple_c, (xcb, ycb))
     gamer1 = "Player 1"
     gamer1score = 0
     if best == 21:
@@ -164,7 +164,7 @@ def playing(best):
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
-"""
+                        
             play_button("Computer", mouse[0], mouse[1], 400, 700, 200, 50, constant.yellow_color, constant.grey_color, 30)
             if True:
                 if tips == 2:
@@ -205,7 +205,7 @@ def playing(best):
                         tips += 1
                         if best < 3:
                             tips = 1
-"""
+
                     if gamer2score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
@@ -251,16 +251,16 @@ def playing(best):
                         break
 
         best6 = player_button("Back", mouse[0], mouse[1], 0, 0, 200, 50, constant.red_color, constant.blue_color, 30, 7)
-        set_up.game_layout_display.blit(set_up.red_c, (xcr, ycr))
+        set_up.game_layout_display.blit(set_up.teal_c, (xcr, ycr))
         if 5 > best > 1 or best == 21:
-            set_up.game_layout_display.blit(set_up.yellow_c, (xcy + 2, ycy))
+            set_up.game_layout_display.blit(set_up.white_c, (xcy + 2, ycy))
 
         if 5 > best > 2:
-            set_up.game_layout_display.blit(set_up.green_c, (xcg + 4, ycg))
+            set_up.game_layout_display.blit(set_up.grey_c, (xcg + 4, ycg))
 
 
         if 5 > best > 3:
-            set_up.game_layout_display.blit(set_up.blue_c, (xcb + 6, ycb))
+            set_up.game_layout_display.blit(set_up.purple_c, (xcb + 6, ycb))
 
         if less:
             time_clock = pygame.time.get_ticks()
