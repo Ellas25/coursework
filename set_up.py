@@ -21,10 +21,10 @@ d6 = pygame.image.load(constant.DICE6_IMAGE_NAME)
 
 #Importing the players for the game
 
-red_c = pygame.image.load(constant.COUNTER_RED_IMAGE_NAME)
-yellow_c = pygame.image.load(constant.COUNTER_YELLOW_IMAGE_NAME)
-green_c = pygame.image.load(constant.COUNTER_GREEN_IMAGE_NAME)
-blue_c = pygame.image.load(constant.COUNTER_BLUE_IMAGE_NAME)
+teal_c = pygame.image.load(constant.COUNTER_TEAL_IMAGE_NAME)
+whitec = pygame.image.load(constant.COUNTER_WHITE_IMAGE_NAME)
+grey_c = pygame.image.load(constant.COUNTER_GREY_IMAGE_NAME)
+purple_c = pygame.image.load(constant.COUNTER_PURPLE_IMAGE_NAME)
 menu_background = pygame.image.load(constant.MENU_BACKGROUND)
 posts = pygame.image.load(constant.POSTS)
 
