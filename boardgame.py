@@ -265,14 +265,21 @@ def playing(best):
         if less:
             time_clock = pygame.time.get_ticks()
             while pygame.time.get_ticks() - time_clock < 2000:
-                message_displays.message_display1_screen("There's a Ladder!", 650, 50, 35, constant.black_color)
+                message_displays.message_display1_screen("There's a Ladder! Yes you go up the ladder", 650, 50, 35, constant.black_color)
                 pygame.display.update()
         if set:
             time_clock = pygame.time.get_ticks()
             while pygame.time.get_ticks() - time_clock < 2000:
-                message_displays.message_display_screen("There's a Snake!", 650, 50, 35, constant.black_color)
+                message_displays.message_display_screen("There’s a Snake! Sorry you go down to the bottom of the snake!", 650, 50, 35, constant.black_color)
+                pygame.display.update()
+          """      
+         if powerup:
+            time_clock = pygame.time.get_ticks()
+            while pygame.time.get_ticks() - time_clock < 2000:
+                message_displays.message_display_screen("Yay a powerup", 650, 50, 35, constant.black_color)
                 pygame.display.update()
 
+"""
         time_clocks.tick(7)
         pygame.display.update()
 
