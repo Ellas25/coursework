@@ -160,7 +160,7 @@ def playing(best):
                     if gamer1score == 100:
                         time = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time < 2000:
-                            message_displays.message_display_screen("Player 1 Wins", 650, 50, 50, constant.blue_color)
+                            message_displays.message_display_screen("Player 1 Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
@@ -178,7 +178,7 @@ def playing(best):
                     if gamer2score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
-                            message_displays.message_display_screen("Computer Wins", 650, 50, 50, constant.black_color)
+                            message_displays.message_display_screen("Computer Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.LOSE_SOUND)
                             pygame.display.update()
                         break
@@ -192,7 +192,7 @@ def playing(best):
                     if gamer1score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
-                            message_displays.message_display1_screen("Player 1 Wins", 650, 50, 50, constant.black_color)
+                            message_displays.message_display1_screen("Player 1 Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
@@ -209,7 +209,7 @@ def playing(best):
                     if gamer2score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
-                            message_displays.message_display1_screen("Player 2 Wins", 650, 50, 50, constant.black_color)
+                            message_displays.message_display1_screen("Player 2 Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
@@ -227,7 +227,7 @@ def playing(best):
                     if gamer3score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
-                            message_displays.message_display1_screen("Player 3 Wins", 650, 50, 50, constant.black_color)
+                            message_displays.message_display1_screen("Player 3 Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
@@ -245,7 +245,7 @@ def playing(best):
                     if gamer4score == 100:
                         time_clock = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time_clock < 2000:
-                            message_displays.message_display1_screen("Player 4 Wins", 650, 50, 50, constant.black_color)
+                            message_displays.message_display1_screen("Player 4 Wins", 650, 50, 50, constant.grey_color)
                             pygame.mixer.Sound.play(constant.WIN_SOUND)
                             pygame.display.update()
                         break
@@ -276,7 +276,7 @@ def playing(best):
          if powerup:
             time_clock = pygame.time.get_ticks()
             while pygame.time.get_ticks() - time_clock < 2000:
-                message_displays.message_display_screen("Yay a powerup", 650, 50, 35, constant.black_color)
+                message_displays.message_display_screen("Yay a powerup", 650, 50, 35, constant.blue_color)
                 pygame.display.update()
 
 """
@@ -310,7 +310,7 @@ def turn(score, lefted, section):
         score -= d
         time_clock = pygame.time.get_ticks()
         while pygame.time.get_ticks() - time_clock < 1500:
-            message_displays.message_display_screen("Can't move!", 650, 50, 35, constant.blue_green_color)
+            message_displays.message_display_screen("Can't move!", 650, 50, 35, constant.green_color)
             pygame.display.update()
     return score, lefted, section, six
 
