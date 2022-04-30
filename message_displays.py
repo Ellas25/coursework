@@ -1,6 +1,9 @@
 import pygame
 import constant
 import set_up
+import pygame
+import constant
+import set_up
 
 def message_display_screen(text, x, y, size):
     #print(pygame.font.get_fonts())
@@ -22,4 +25,4 @@ def message_display1_screen(text, x, y, fs, c):
 
 def text_objects1(text, font):
     textSurface = font.render(text, True, constant.blue_color)
-    return textSurface, textSurface.get_rect()
+    return textSurface, textSurface.get_rect(
