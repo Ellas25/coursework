@@ -33,11 +33,11 @@ def main_menu():
                 constant.red_color, constant.grey_color, 60, 0)
 
             mouse = pygame.mouse.get_pos()
-            if buttons.side_button("Mute Music", mouse[0], mouse[1], 1166, 0, 200, 50, constant.red_color, constant.purple_color, 25):
+            if buttons.side_button("Mute Music", mouse[0], mouse[1], 1166, 0, 200, 50, constant.red_color, constant.teal_color, 25):
                 pygame.mixer.music.pause()
-            if buttons.side_button("Play Music", mouse[0], mouse[1], 1166, 75, 200, 50, constant.purple_color, constant.grey, 25):
+            if buttons.side_button("Play Music", mouse[0], mouse[1], 1166, 75, 200, 50, constant.purple_color, constant.grey_color, 25):
                 pygame.mixer.music.unpause()
-            if buttons.side_button("Credits", mouse[0], mouse[1], 1166, 150, 200, 50, constant.grey_color, constant.red_color, 25):
+            if buttons.side_button("Credits", mouse[0], mouse[1], 1166, 150, 200, 50, constant.grey_color, constant.teal, 25):
                 creditation()
                 #pass
             pygame.display.update()
@@ -58,7 +58,7 @@ def creditation():
         # mouse position
         mouse = pygame.mouse.get_pos()
         click = pygame.mouse.get_pressed()
-        if buttons.centre_button("Back", mouse[0], mouse[1], constant.WIDTH / 2 - 100, 700, 200, 50, constant.grey_color, constant.white_color, 25, 20):
+        if buttons.centre_button("Back", mouse[0], mouse[1], constant.WIDTH / 2 - 100, 700, 200, 50, constant.grey_color, constant.lime, 25, 20):
             main_menu()
 
         pygame.display.update()
