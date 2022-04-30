@@ -14,7 +14,7 @@ DICE6_IMAGE_NAME = "src/resources/dice6.png"
 
 MENU_BACKGROUND = "src/resources/game_background.jpg"
 SNAKE = "src/resources/snakes.jpg"
-OWNER = "src/resources/owner.jpg"
+OWNER = "src/resources/credits.png"
 
 COUNTER_TEAL_IMAGE_NAME = "src/resources/teal_c.png"
 COUNTER_GREY_IMAGE_NAME = "src/resources/grey_c.png"
