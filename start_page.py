@@ -4,28 +4,28 @@ def introduction():
     time_clock = pygame.time.get_ticks()
 
     while pygame.time.get_ticks() - time_clock < 2500:
-        set_up.game_layout_display.blit(set_up.initial_background, (0, 0))
+        set_up.game_layout_display.blit(set_up.initial_background, (0, 1))
         pygame.display.update()
 
     while True:
         time_clock = pygame.time.get_ticks()
         while pygame.time.get_ticks() - time_clock < 500:
-            set_up.game_layout_display.blit(set_up.initial_background2, (0, 0))
+            set_up.game_layout_display.blit(set_up.initial_background2, (0, 1))
             pygame.display.update()
         time_clock = pygame.time.get_ticks()
 
         while pygame.time.get_ticks() - time_clock < 500:
-            set_up.game_layout_display.blit(set_up.initial_background3, (0, 0))
+            set_up.game_layout_display.blit(set_up.initial_background3, (0, 1))
             pygame.display.update()
         time_clock = pygame.time.get_ticks()
 
         while pygame.time.get_ticks() - time_clock < 500:
-                set_up.game_layout_display.blit(set_up.initial_background4, (0, 0))
+                set_up.game_layout_display.blit(set_up.initial_background4, (0, 1))
                 pygame.display.update()
         time_clock = pygame.time.get_ticks()
 
         while pygame.time.get_ticks() - time_clock < 500:
-                    set_up.game_layout_display.blit(set_up.initial_background5, (0, 0))
+                    set_up.game_layout_display.blit(set_up.initial_background5, (0, 1))
                     pygame.display.update()
 
         for event in pygame.event.get():
